@@ -1,30 +1,30 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, Building, Armchair, Trees } from "lucide-react"
+import { User, Gamepad2, BookOpen, Star } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
   {
-    title: "Жилая архитектура",
-    description: "Создаем дома, которые сочетают красоту с комфортом, где каждое пространство служит и форме, и функции.",
-    icon: Home,
+    title: "Персонажи и OC",
+    description: "Рисую оригинальных персонажей, фанарт и авторские концепты — от набросков до финальной цифровой живописи.",
+    icon: User,
   },
   {
-    title: "Коммерческие объекты",
+    title: "Игровая графика",
     description:
-      "Проектируем рабочие пространства, которые вдохновляют на продуктивность и отражают ценности передовых организаций.",
-    icon: Building,
+      "Спрайты, иконки, UI-элементы и концепт-арт для игр в любом стиле — от пиксель-арта до детального рисунка.",
+    icon: Gamepad2,
   },
   {
-    title: "Дизайн интерьеров",
+    title: "Книжная иллюстрация",
     description:
-      "Создаем интерьеры, которые гармонируют с архитектурной оболочкой, формируя целостный пространственный опыт.",
-    icon: Armchair,
+      "Иллюстрации для детских книг, комиксов, манги и авторских проектов с нуля — от идеи до готового макета.",
+    icon: BookOpen,
   },
   {
-    title: "Градостроительство",
+    title: "Коммерческий арт",
     description:
-      "Формируем сообщества через продуманную интеграцию общественных пространств, зданий и природных элементов.",
-    icon: Trees,
+      "Маскоты, брендинг, мерч и иллюстрации для соцсетей — всё, что помогает вашему бизнесу выделиться.",
+    icon: Star,
   },
 ]
 
@@ -57,14 +57,14 @@ export function Expertise() {
     <section id="services" ref={sectionRef} className="py-32 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mb-20">
-          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
+          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Что я рисую</p>
           <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Экспертиза</HighlightedText>, отточенная
+            <HighlightedText>Направления</HighlightedText>, в которых
             <br />
-            практикой
+            я работаю
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Каждый проект опирается на десятилетия совокупного опыта, создавая архитектуру, которая одновременно инновационна и вневременна.
+            Иллюстрации для любых целей — будь то личный проект, игра, книга или коммерческий заказ.
           </p>
         </div>
 
